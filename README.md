@@ -15,3 +15,7 @@
    代码覆盖率90%以上
    语言不限
    <代码整洁之道>阅读分享结束前提供所有源码和测试结果.
+   
+测试：
+1. 进入项目目录：J:\pro\tdd_coding
+2. 执行： python -m unittest discover -v

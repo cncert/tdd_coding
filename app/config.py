@@ -8,12 +8,12 @@ class ProductionConfig:
     DB_URI = str(BASE_PATH / 'mock_data' / 'contactors.db')
 
 
-class TestConfig:
+class TestsConfig:
     BASE_PATH = Path.absolute(Path(__file__).parent.parent)
-    DB_URI = str(BASE_PATH / 'mock_data' / 'test.db')
+    DB_URI = str(BASE_PATH / 'mock_data' / 'mock_for_test.db')
 
 
 config = {
     'production': ProductionConfig,
-    'testing': TestConfig
+    'tests': TestsConfig
 }
