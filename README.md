@@ -38,12 +38,12 @@ Name                          Stmts   Miss  Cover
 -------------------------------------------------
 app\__init__.py                   0      0   100%
 app\config.py                     8      0   100%
-app\manager.py                  132     11    92%
+app\manager.py                  131     11    92%
 app\test\__init__.py              0      0   100%
 app\test\test_db.py              24      1    96%
 app\test\test_functional.py      74      1    99%
 app\utils.py                     17      1    94%
 -------------------------------------------------
-TOTAL                           255     14    95%
+TOTAL                           254     14    94%
 ```
 3. coverage html -d covhtml  生成html文档
