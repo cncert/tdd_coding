@@ -16,6 +16,34 @@
    语言不限
    <代码整洁之道>阅读分享结束前提供所有源码和测试结果.
    
+运行：
+
+######进入到项目目录tdd_coding中
+1. python app/manager.py add Tom
+2. python app/manager.py list
+3. python app/manager.py delete Tom
+4. python app/manager.py search Tom
+5. python app/manager.py update Tom
+   
+
 测试：
 1. 进入项目目录：J:\pro\tdd_coding
 2. 执行： python -m unittest discover -v
+
+覆盖率：
+1. coverage run -m unittest discover -v
+2. coverage report
+```
+Name                          Stmts   Miss  Cover
+-------------------------------------------------
+app\__init__.py                   0      0   100%
+app\config.py                     8      0   100%
+app\manager.py                  132     11    92%
+app\test\__init__.py              0      0   100%
+app\test\test_db.py              24      1    96%
+app\test\test_functional.py      74      1    99%
+app\utils.py                     17      1    94%
+-------------------------------------------------
+TOTAL                           255     14    95%
+```
+3. coverage html -d covhtml  生成html文档

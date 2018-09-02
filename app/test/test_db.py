@@ -1,8 +1,8 @@
 # encoding: utf-8
 
+from pathlib import Path
 import unittest
 import json
-from pathlib import Path
 from app.config import config
 from app.manager import DbManager
 
@@ -28,6 +28,7 @@ class DbTest(unittest.TestCase):
         db_manager = DbManager('wrong_uri')
         db_connector = db_manager.db_connect()
         self.assertIsInstance(db_connector, str)
+
 
 
 if __name__ == '__main__':
